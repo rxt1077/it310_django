@@ -1,0 +1,38 @@
+{% extends "welcome/bootstrap.html" %}
+{% block title %}Welcome!{% endblock %}
+{% block content %}
+<div class="row mt-5">
+	<h2>Congratulations! You are successfully running the base IT310 container.</h2>
+</div>
+<hr/>
+<div class="row">
+	<div class="col-sm">
+		Your site is named "it310" and it has one application called "welcome" (you're looking at it)
+	</div>
+	<div class="col-sm">
+		The default admin username AND password is "it310"
+	</div>
+	<div class="col-sm">
+		The docker-compose.yml file sets up a volume linking the project directory to the base Django directory. You should be able to see all the files for this project from a file browser. As you update them, the development server will automatically refresh.
+	</div>
+</div>
+<div class="row">
+	<ul class="mt-5 mx-auto list-group">
+		<li class="list-group-item active">
+			Resources
+		</li>
+		<li class="list-group-item">
+			<a href="https://docs.docker.com/compose/django">Setting up Django with Docker (used to create this container)</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://docs.djangoproject.com/en/3.0/intro/tutorial01/">Writing your first Django App</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Bootstrap Documentation</a>
+        </li>
+        <li class="list-group-item">
+            <a href="https://notepad-plus-plus.org/downloads/">Notepad++ Text Editor</a>
+        </li>
+	</ul>
+</div>
+{% endblock %}
